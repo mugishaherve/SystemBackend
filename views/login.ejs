@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body{
+            
+            background-color: rgb(190, 193, 197);
+            position: relative;
+        }
+        .container{
+            width: 28em;
+            height: 28em;
+            background-color: rgb(250, 250, 250);
+            position:absolute;
+            margin: 4em 0 0 23em;
+            border-radius: 15px;
+        }
+        .input{
+            display: flex;
+            flex-direction: column;
+            width: 25em;
+            height: 12em;
+            position: absolute;
+            justify-content: space-between;
+            padding: 2em 0 0 2em;
+            cursor: pointer;
+            
+            
+        }
+        .email{
+            width: 20rem;
+            height: 3rem;
+            border-radius: 7px;
+            border: none;
+            background-color: rgb(92, 109, 125);
+
+        }
+        .email:hover{
+            background-color: rgb(143, 142, 140);
+            
+        }
+        .password{
+            width: 20rem;
+            height: 3rem;
+            border-radius: 7px;
+            border: none;
+            background-color: rgb(92, 109, 125);
+
+            
+        }
+        .password:hover{
+            background-color: rgb(143, 142, 140);
+        
+        }
+        .word{
+            color: rgb(129, 133, 133);
+        }
+        .login{
+            padding: 19em 0 0 10em;
+            
+        }
+        .button{
+           width: 10em;
+           height: 5em;
+           border-radius: 10px;
+           border: none;
+           background-color: rgb(40, 40, 75);
+           color: rgb(129, 133, 133);
+           
+        }
+        .button:hover{
+            background-color: rgb(105, 105, 169); 
+        }
+        .title{
+            padding-left: 3em;
+            color: rgb(131, 134, 137);
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+    </style>
+</head>
+<body>
+    <form method="post" action="/profile">
+
+        <div class="container">
+            <h3 class="title">LOGIN INTO YOUR ACCOUNT</h3>
+            <div class="input">
+                <div class="first"><h2 class="word">Enter Username</h2>
+                <input class="email" type="text" name="username">
+                </div>
+                <div class="second"><h2 class="word">Password</h2>
+                    <input class="password" type="password" name="password">
+                    </div>
+            </div>
+            <div class="login">
+           <input type="submit" class="button" value="Login">
+            </div>
+        </div>
+        
+
+    </form>
+    
+</body>
+</html>

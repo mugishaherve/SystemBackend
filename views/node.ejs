@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GET ACCESS</title>
+    
+    <style>
+        body{
+            background-color: rgba(35, 34, 34, 0.858);
+            position: relative;
+            
+        }
+        .container{
+            background-color: rgb(92, 108, 106);
+            width: 25rem;
+            height: 32rem;
+            margin: 50px 0px 0px 32rem;
+            border-radius: 10px;
+        }
+        .input{
+            display: flex;
+            flex-direction: column;
+            width: 25em;
+            height: 12em;
+            position: absolute;
+            justify-content: space-between;
+            padding: 1em 0 0 2em;
+            cursor: pointer;
+            
+            
+        }
+        
+        .username{
+            width: 20rem;
+            height: 3rem;
+            border-radius: 7px;
+            border: none;
+            background-color: rgb(55, 69, 82);
+        
+        }
+        .username:hover{
+            background-color: rgb(143, 142, 140);
+            
+        }
+
+        .email{
+            width: 20rem;
+            height: 3rem;
+            border-radius: 7px;
+            border: none;
+            background-color: rgb(55, 69, 82);
+
+        }
+        .email:hover{
+            background-color: rgb(143, 142, 140);
+            
+        }
+        .password{
+            width: 20rem;
+            height: 3rem;
+            border-radius: 7px;
+            border: none;
+            background-color: rgb(55, 69, 82);
+            
+        }
+        .password:hover{
+            background-color: rgb(143, 142, 140);
+        
+        }
+        .title{
+            padding-left: 3em;
+            font-family: 'Times New Roman', Times, serif;
+            color: rgb(48, 71, 64);
+        }
+        .sign-up{
+            padding: 24em 0 0 15em;
+            
+        
+        }
+        .button{
+            width: 10em;
+            height: 5em;
+            border-radius: 10px;
+            border: none;
+            background-color: rgb(27, 52, 62);
+        }
+        .button:hover{
+            background-color: rgb(62, 85, 94);  
+        }
+        /* .upload{
+            padding: 3em 3em 0 0;
+        } */
+    </style>
+</head>
+<body>
+    <form method="post" action="/form" enctype="multipart/form-data">
+        <div class="container">
+            <h3 class="title">CREATE NEW ACCOUNT</h3>
+            <div class="input">
+              <div class="first"><h2>Enter your username</h2>  
+                <input class="username" type="text" name="username">
+                </div>
+                <div class="second"><h2>Enter  your email</h2>
+                <input class="email" type="email" name="email">
+                </div>
+                <div class="third"><h2>Password</h2>
+                <input class="password" type="password" name="password">
+                </div>
+                <div>
+                    <input type="file" value="Upload a photo" name="image" class="upload">
+                </div>
+            </div>
+            <div class="sign-up">
+          <input type="submit" class="button">
+            </div>
+        </div>
+    </form>
+   
+    
+    
+</body>
+</html>
